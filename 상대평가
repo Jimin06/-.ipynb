@@ -1,1 +1,27 @@
-print ("안녕하십니까. 지금부터 상대평가 채점을 시작하겠습니다. 아래의 칸에 학생 수를 입력한 뒤 'Enter' 키를 누르십시오.")
+print ("안녕하십니까. 지금부터 상대평가 채점을 시작하겠습니다. 아래의 칸에 학생 수를 입력한 뒤 'Enter' 키를 누르세요.")
+print('학생 여러분은 자신의 점수를 입력해 주시기 바랍니다.')
+while(1) :
+  a= int(input())
+  if a > 100 or a < 0 :
+    print('점수가 100점 초과 혹은 0점 미만이므로 장비를 정지합니다.')
+    print('감사합니다.')
+    break
+  if a<= 100 and a>= 0 :
+    if a >= 90 :
+      print('{0}점은 1 등급입니다.'.format(a))
+    elif a >= 80 :
+      print('{0}점은 2 등급입니다.'.format(a))
+    elif a >= 70 :
+      print('{0}점은 3 등급입니다.'.format(a))
+    elif a >= 60 :
+      print('{0}점은 4 등급입니다.'.format(a))
+    elif a >= 50 :
+      print('{0}점은 5 등급입니다.'.format(a))
+    elif a >= 40 :
+      print('{0}점은 6 등급입니다.'.format(a))
+    elif a >= 30 :
+      print('{0}점은 7 등급입니다.'.format(a))
+    elif a >= 20 :
+      print('{0}점은 8 등급입니다.'.format(a))
+    else :
+      print('{0}점은 9 등급입니다.'.format(a))
